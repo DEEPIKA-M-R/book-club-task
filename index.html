@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karma">
+<link rel="stylesheet" href="style.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Karma", sans-serif}
+.w3-bar-block .w3-bar-item  {padding:20px}
+.w3-top{font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+font-style: italic;}
+</style>
+</head>
+<body>
+
+<!-- Sidebar (hidden by default) -->
+<nav class="w3-sidebar w3-bar-block w3-card w3-top w3-xlarge w3-animate-left" style="display:none;z-index:2;width:40%;min-width:300px" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()"
+  class="w3-bar-item w3-button">Close Menu</a>
+  <a href="#food" onclick="w3_close()" class="w3-bar-item w3-button">Find a book</a>
+  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">Discussion</a>
+</nav>
+
+<!-- Top menu -->
+ <style>
+    .w3-rightw3-padding-16p{
+        font-style: italic;
+        font-size: xx-large;
+    }
+    .w3-quarter:hover{
+        color:blueviolet
+    }
+ </style>
+<div class="w3-top">
+  <div class="w3-white w3-xlarge" style="max-width:1200px;margin:auto">
+    <div class="w3-button w3-padding-16 w3-left" onclick="w3_open()">☰</div>
+    <div class="w3-right w3-padding-16">
+        <a href="form.html"><button>Login</button></a>
+    </div>
+    <div class="w3-center w3-padding-16">Wise Words - A Book Club</div>
+  </div>
+</div>
+  
+<!-- !PAGE CONTENT! -->
+<div class="w3-main w3-content w3-padding" style="max-width:1200px;margin-top:100px">
+    <style>
+        .filterDiv {
+          float: left;
+          background-color: #606363;
+          color: #ffffff;
+          width: 100px;
+          line-height: 50px;
+          text-align: center;
+          margin: 2px;
+          display: none;
+        }
+        
+        .show {
+          display: block;
+        }
+        
+        .container {
+          margin-top: 20px;
+          overflow: hidden;
+        }
+        
+        /* Style the buttons */
+        .btn {
+          border: none;
+          outline: none;
+          padding: 12px 16px;
+          background-color: #f1f1f1;
+          cursor: pointer;
+        }
+        
+        .btn:hover {
+          background-color: #ddd;
+        }
+        
+        .btn.active {
+          background-color: #666;
+          color: white;
+        }
+        </style>
+
+<h2>Filter</h2>
+
+<div id="myBtnContainer">
+  <button class="btn" onclick="filterSelection('cars')"> Fiction</button>
+  <button class="btn" onclick="filterSelection('animals')"> Non-fiction</button>
+</div>
+
+<div class="container">
+  <div class="filterDiv cars">EVONY IVEY</div>
+  <div class="filterDiv colors fruits">CHARLOTTE</div>
+  <div class="filterDiv cars">KEN ADAMS</div>
+  <div class="filterDiv colors">JOHN GREEN</div>
+  <div class="filterDiv cars">MATT HEIG</div>
+  <div class="filterDiv colors">WINSTON</div>
+  <div class="filterDiv animals">JL COLLINS</div>
+  <div class="filterDiv animals">EDWARDS</div>
+</div>
+<hr>
+
+  <!-- First Photo Grid-->
+  <div class="w3-row-padding w3-padding-16 w3-center" id="food">
+    <div class="w3-quarter">
+      <img src="img1.jpeg" alt="image" style="width:100%">
+      <h2>$23</h2>
+      <h3>To the Bright Edge Of The World</h3>
+      <p>-by EVONY IVEY </p>
+    </div>
+    <div class="w3-quarter">
+      <img src="img2.jpg" alt="image" style="width:100%">
+      <h2>$23</h2>
+      <h3>Once There Were Wolves</h3>
+      <p>-by CHARLOTTE McCONAGTTY</p>
+    </div>
+    <div class="w3-quarter">
+      <img src="img3.jpg" alt="image" style="width:95%">
+      <h2>$25</h2>
+      <h3>Thoughts In My Head</h3>
+      <p>-by KEN ADAMS</p>
+      
+    </div>
+    <div class="w3-quarter">
+      <img src="IMG4.jpg" alt="image" style="width:100%">
+      <h2>$28</h2>
+      <h3>The Fault In Our Stars</h3>
+      <p>-by JOHN GREEN</p>
+    </div>
+  </div>
+  
+  <!-- Second Photo Grid-->
+  <div class="w3-row-padding w3-padding-16 w3-center">
+    <div class="w3-quarter">
+      <img src="img5.jpg" alt="image" style="width:100%">
+      <h2>$30</h2>
+      <h3>The Comfort Book</h3>
+      <p>-by MATT HEIG</p>
+    </div>
+    <div class="w3-quarter">
+      <img src="img6.webp" alt="image" style="width:90%">
+      <h2>$15</h2>
+      <h3>The Live Inside Your Hands</h3>
+      <p>-by WINSTON BROWN</p>
+    </div>
+    <div class="w3-quarter">
+      <img src="img7.webp" alt="image" style="width:95%">
+      <h2>$34</h2>
+      <h3>Pathfinders</h3>
+      <p>-by JL COLLINS</p>
+    </div>
+    <div class="w3-quarter">
+      <img src="img8.jpg" alt="image" style="width:95%">
+      <h2>$20</h2>
+      <h3>What We Set In Motion</h3>
+      <p>-by STEPHAINE AUSTIN EDWARDS</p>
+    </div>
+    <br>
+    <a href="https://www.bookswagon.com/?srsltid=AfmBOoonzBSnwIHjsth84LjlJV2fris5b1bIPUJjqhHLusKpcCGLqBaz">see more to explore</a>
+   </div>
+   <style>
+    .w3-bar:hover{
+       color:blueviolet
+     }
+   </style>
+   <hr>
+    <style>
+    .discuss{
+        text-align: center;
+        width:100px;
+        height:20px
+    }
+    .two{
+        font-style: italic;
+    }
+    </style>
+    <hr id="about">
+    <!-- discuss Section -->
+    <div class="w3-container w3-padding-32 w3-center">  
+    <h3>Discussions</h3><br>
+    <img src="discussion.jpg" class="w3-image" style="display:block;margin:auto" width="800" height="533">
+    <br>
+    <body onload="get()"> 
+        <h3 class="two">Discuss the thoughts</h3>
+        <input type="text" id="textfield" /> 
+        <br>
+        <br>
+        <input type="button" value="save" onclick="save()" /> 
+        <input type="button" value="clear" onclick="remove()" /> 
+        <script> 
+      
+            //Saving data locally 
+            function save() { 
+                var fieldValue = document.getElementById('textfield').value; 
+                localStorage.setItem('text', fieldValue); 
+            } 
+                
+            // Reading data 
+            function get() { 
+                var storedValue = localStorage.getItem('text'); 
+                if(storedValue) { 
+                    document.getElementById('textfield').value = storedValue; 
+                } 
+            } 
+                
+            // Removing stored data 
+            function remove() { 
+                document.getElementById('textfield').value = ''; 
+                localStorage.removeItem('text'); 
+            } 
+            </script> 
+    <!-- post your thoughts: <input type="text"> -->
+    <div class="w3-padding-32">
+   </div>
+   </div>
+   <hr>
+   <!-- Footer -->
+  <style>
+    .w3-row-paddingw3-padding-32{
+        background-color: antiquewhite;
+    }
+    .w3-row-padding w3-padding-32
+    {
+        padding-left: 50;
+    }
+    .w3-third{
+        font-style: italic;
+        font-size: medium;
+    }
+   </style>
+  <footer class="w3-row-padding w3-padding-32">
+    <div class="w3-third">
+      <h3>CONTACT US</h3>
+      <p>wiseworld@booksclub.org</p>
+      <p>9867523456</p>
+    </div>
+  
+    <div class="w3-third">
+      <h3>BLOG POSTS</h3>
+      <ul class="w3-ul w3-hoverable">
+        <li class="w3-padding-16">
+          <p>Join with our team to explore more</p>
+          <img src="book1.avif" class="w3-left w3-margin-right" style="width:200px">
+        </li>
+      </ul>
+    </div>
+
+    <div class="w3-third w3-serif">
+      <h3>POPULAR BOOKS RATINGS</h3>
+        <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom"><a href="https://www.goodreads.com/book/show/22299763-crooked-kingdom">Crooked kingdom</span>
+         <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom"><a href="https://www.goodreads.com/book/show/61431922-fourth-wing">Fourth wing</span>
+        <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom"><a href="https://www.goodreads.com/book/show/61431922-fourth-wing">Know my name</span> 
+        <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom"><a href="https://www.goodreads.com/book/show/61431922-fourth-wing">The mercy</span> 
+        <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom"><a href="https://www.goodreads.com/book/show/61431922-fourth-wing">The glass castle</span>
+        <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom"><a href="https://www.goodreads.com/book/show/61431922-fourth-wing">Meditations</span> 
+    </div>
+  </footer>
+
+<!-- End page content -->
+</div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+</script>
+<script>
+    filterSelection("all")
+    function filterSelection(c) {
+      var x, i;
+      x = document.getElementsByClassName("filterDiv");
+      if (c == "all") c = "";
+      for (i = 0; i < x.length; i++) {
+        w3RemoveClass(x[i], "show");
+        if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+      }
+    }
+    
+    function w3AddClass(element, name) {
+      var i, arr1, arr2;
+      arr1 = element.className.split(" ");
+      arr2 = name.split(" ");
+      for (i = 0; i < arr2.length; i++) {
+        if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+      }
+    }
+    
+    function w3RemoveClass(element, name) {
+      var i, arr1, arr2;
+      arr1 = element.className.split(" ");
+      arr2 = name.split(" ");
+      for (i = 0; i < arr2.length; i++) {
+        while (arr1.indexOf(arr2[i]) > -1) {
+          arr1.splice(arr1.indexOf(arr2[i]), 1);     
+        }
+      }
+      element.className = arr1.join(" ");
+    }
+    
+    // Add active class to the current button (highlight it)
+    var btnContainer = document.getElementById("myBtnContainer");
+    var btns = btnContainer.getElementsByClassName("btn");
+    for (var i = 0; i < btns.length; i++) {
+      btns[i].addEventListener("click", function(){
+        // var current = document.getElementsByClassName("active");
+        current[0].className = current[0].className.replace(" active", "");
+        this.className += " active";
+      });
+    }
+    </script>
+    
+</body>
+</html>
